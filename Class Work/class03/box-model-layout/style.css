@@ -1,0 +1,23 @@
+div {
+    background: grey;
+    padding: 10px 20px 100px 20px;
+    width: 800px;
+}
+h1 {
+    color: white;
+    background: black;
+    text-align: center;
+}
+p {
+    background: tomato;
+    padding: 10px;
+}
+.purple {
+    color: purple;
+}
+.green {
+    color: green;
+}
+.yellow {
+    color: yellow;
+}
