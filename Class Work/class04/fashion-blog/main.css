@@ -1,0 +1,29 @@
+body {
+    width: 720px; 
+    padding: 54px;
+    text-align: left;
+    border: solid 3px #00000;
+    margin: 6px;
+    color:#444444;
+    font-family: "Lato";
+    line-height: 1.5;
+}
+h1 {
+    color: #DD0000;
+}
+h3 {
+    color: #cccccc;
+}
+a {
+    color: #DD0000;
+    text-align: right;
+}
+a:hover {
+    color:#aa0000;
+}
+.nav {
+    color: #dddddd
+}
+.copyright {
+    color: #bbbbbb;
+}
