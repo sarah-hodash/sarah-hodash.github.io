@@ -5,7 +5,8 @@ function changeColor() {
     var red = document.getElementById('red').value;
     var red = document.getElementById('green').value;
     var red = document.getElementById('blue').value;
-    var colorStr = "rgb("+ red + "," + green + "," + blue +")";
+    var colorStr = 'rgb(' + red + ',' + green + "," + blue +')';
+    document.getElementById('colorful-text').innerHTLM = colorStr;
 }
 
 // 2. Write a function, named changeColor, that is called when #color-button is clicked
