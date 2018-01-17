@@ -10,16 +10,25 @@
 
 // Output your results to the user
 
+// $('#click-me').click(function(){  
+//     var age = $('#age').val();
+//     $('#age').html(parseInt(age));
+//     var maxAge = $('#max-age').val();
+//     $('#max').html(parseInt(maxAge));
+//     var item = $('#item').val();
+//     var numPerDay = $('#num-per-day').val();
+//     $('#num-per-day').html(parseInt(numPerDay));
+
+//     $('#solution').html((maxAge-age)*(numPerDay*365));
+//     $('#drink').html(item);
+// })
+
 $('#click-me').click(function(){  
     var age = $('#age').val();
-    $('#age').html(parseInt(age));
-    var max = $('#max-age').val();
-    $('#max').html(parseInt(max));
+    var maxAge = $('#max-age').val();
     var item = $('#item').val();
-    var num = $('#num-per-day').val();
-    $('#num-per-day').html(parseInt(num));
-
-    $('#solution').html((max-age)*num);
-    $('#drink').html(item);
-})
-
+    var numPerDay = $('#num-per-day').val();
+    var total = parseInt (maxAge) - parseInt (age) + parseInt (numPerDay) * 365;
+    $('#solution').html(total);
+    $('#item').html(item);
+})   
