@@ -67,6 +67,7 @@ h3 {
 
 main {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -100,9 +101,25 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 480px) {
+@media (max-width: 560px) {
 	#container {
 		width: 100%;
+	}
+	.big-article,
+	.main-article {
+		margin-top: 30px;
+	}
+	.side-article{
+		margin-top: 50px;
+	}
+	#articles{
+		width: 100%;
+	}
+	#side-column {
+		width: 100%;
+	}
+	.hero-h1 {
+		font-size: 28px;
 	}
 }
 

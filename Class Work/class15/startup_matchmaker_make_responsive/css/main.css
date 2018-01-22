@@ -181,3 +181,34 @@ footer {
 	/* center the content inside banner */
 	/* have the touts stack on top of eachother */
 	/* make each tout full width using percent width. you may need to use the border-box property to prevent the padding from the tout's padding cause an overflow of content. get rid of borders on the tout */
+
+@media (max-width: 1000px) {
+	body {
+		width: 95%;
+	}
+	header {
+		flex-wrap: wrap;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	.header-nav {
+		padding-right: 20px;
+	}
+}
+@media (max-width: 550px) {
+	body {
+		width: 100%;
+	}
+	.header-nav {
+		display: block;
+	}
+	.banner {
+		align-content: center;
+	}
+	.touts {
+		flex-wrap: wrap;
+	}
+	.tout {
+		width: 100%;
+	}
+}
