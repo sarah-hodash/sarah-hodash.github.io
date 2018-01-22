@@ -1,4 +1,7 @@
-project proposal
-I'm thinking of doing a page of Instagram famous dogs/pets 
-I would include photos, profiles, links to their Instagram
-maybe something interactive for the user?
+For Jquery:
+
+Make the "about" "work" and "contact" buttons scroll down the page to each section
+
+make a rotating picture background for the first section "About"
+
+make the contact form usable
