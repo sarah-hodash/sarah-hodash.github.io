@@ -1,56 +1,45 @@
 <html>
-    <!-- <style>
-        .container{
-        display: grid;
-        height: 100%;
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: 50px auto 100px 100px 75px;
-        grid-template-areas:
-          "h h h h h h h h h h h h"
-          "a a a a a a a a a a a a"
-          "w w w w w w w w w w w w"
-          "c c c c c c c c c c c c"
-          "f f f f f f f f f f f f";
-      }
-      .header{
-        grid-area: h;
-      }
-      .about{
-        grid-area: a;
-      }
-      .work{
-        grid-area: w;
-      }
-      .contact{
-        grid-area: c;
-      }
-      .footer{
-        grid-area: f;
-      }
-    </style>     -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
 <head>
         <title>Kaela Wnorowski Art</title>
     
-        <link href='https://fonts.googleapis.com/css?family=Oswald:700,400|Merriweather:700,700italic|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet">
         <link rel="stylesheet" href="images/style.css">
     </head>
     <body>
     <header>
         <h1>Kaela Wnorowski Gallery</h1>
-        <nav class="nav">
-            <a class="button" href="#">About</a>
-            <a class="button" href="#">Work</a>
-            <a class="button" href="#">Contact</a>
-		</nav>
+        <nav id="nav">
+            <a class="buttonabout" href="#">About</a>
+            <a class="buttonwork" href="#">Work</a>
+            <a class="buttoncontact" href="#">Contact</a>
+        </nav>
+        <div id="burger">
+                <img src="images/hamburger-icon.png" class="burgerpic" alt="">
+            </div>
+            <!-- <nav id="mobile-nav">
+                    <a class= "buttonabout" href="#">About</a>
+                    <a class= "buttonwork"href="#">Work</a>
+                    <a class= "buttoncontact"href="#">Contact</a>
+                </nav> -->
     </header>
+        <nav id="mobile-nav">
+            <a class= "buttonabout" href="#">About</a>
+            <a class= "buttonwork"href="#">Work</a>
+            <a class= "buttoncontact"href="#">Contact</a>
+        </nav>
+        
     <section class="about">		
 		<div class="main">
-			<h2>About Kaela</h2>
-			<p>Kaela Wnorowski has a degree from Elon University in Finance with a minor in Art. The artist uses several mediums, but primarily focuses on painting. She hopes to one day open her own gallery. In her free time, Kaela enjoys petting dogs and reading about giant squids.</p>
+            <h2>About Kaela</h2>
+            <p>Kaela Wnorowski has a degree from Elon University in Finance with a minor in Art. The artist uses several mediums, but primarily focuses on painting. She hopes to one day open her own gallery. In her free time, Kaela enjoys petting dogs and reading about giant squids.</p>
+            <img src="images/Kaela.jpg" class="pic">
         </div>
+        </section>
     <section class="work">		
         <div class="main">
-            <h2>Work</h2>
+            <h2>Kaela's Work</h2>
             <img src="images/IMG_3134.jpg" class="img">
             <img src="images/IMG_3135.jpg" class="img">
             <img src="images/IMG_3137.jpg" class="img">
@@ -64,19 +53,21 @@
             <h2>Contact</h2>
             <h3>Name</h3>
             <form id="form-name">
-                <input id="name" autofocus placeholder="Name">
+                <input class="name" autofocus placeholder="Name">
             </form>
             <h3>Email</h3>
             <form id="form-email">
-                <input id="email" autofocus placeholder="Email">
+                <input class="email" autofocus placeholder="Email">
             </form>
             <h3>Message</h3>
             <form id="form-message">
-                <input id="message" autofocus placeholder="Message">
+                <input class="message" autofocus placeholder="Message">
+                <input type="submit" value="Submit!">
             </form>
         </div>
     </section>
-    <footer>
-    </footer>
+    <footer>Made by Sarah</footer>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src=".js"></script>
 </body>
 </html>

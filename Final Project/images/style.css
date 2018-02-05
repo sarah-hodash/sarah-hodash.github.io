@@ -1,5 +1,12 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    font-family: "Source Sans Pro";
+    font-family: 'Poiret One'; 
+    width: 100%;
+    margin: 0 0;
 }
 header{
     background: black;
@@ -7,49 +14,173 @@ header{
     color: white;
     align-items: baseline;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+	left: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Poiret One';
+    border-bottom: 1pt solid lavender;
 }
-.button{
+.buttonabout{
     color: white;
     padding-right: 20px;
+    font-family: 'Poiret One';
+    text-decoration: none;
 }
-.about{
-    background: url('IMG_3137');
+.buttonwork{
+    color: white;
+    padding-right: 20px;
+    font-family: 'Poiret One';
+    text-decoration: none;
+}
+.buttoncontact{
+    color: white;
+    padding-right: 20px;
+    font-family: 'Poiret One';
+    text-decoration: none;
 }
 h1{
-    font-family: "Merriweather", serif;
-    background: black;
+    font-family: 'Poiret One';
     color: white;
 }
 
 h2 {
-    font-family: "Merriweather";
+    font-family: 'Poiret One';    
     background: black;  
     text-align: center;
     color: white;
+    margin: 0 0;
+    /* padding-top:80px; */
 }
+
 h3{
-    font-family: "Merriweather", serif;
+    font-family: 'Poiret One';  
     font-size: 25px;
 } 
 
 .about{
-    background-image: url("../img/coworking.jpg");
-    padding:50px;
+    /* background-image: url("../images/IMG_3134.jpg"); */
+    background-color: lightslategray;
+    height: 750px;
+    width: 100%;
+    margin: 0 0;
+    padding-top: 80px;
 }
+
+p {
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Poiret One';  
+}
+
 .work{
-    background:rgba(255,255,255, 0.8);
-    padding:50px;
+    width: 100%;
+    background: lavender;
+    font-family: 'Poiret One';   
+    display: flex;
+    text-align: center;
 }
 
 .contact{
-    padding:50px;
+    width: 100%;
+    background: lightslategrey;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
 }
 
 footer{
     background: black;
-    color: white;    
-    padding: 1px;
+    color: white;
     position: absolute;
     bottom: 0px;
     width: 100%;
+    height: 25px;
+    overflow: hidden;
+    font-size: 15px;
+    /* padding-bottom: 10%; */
+    /* padding-top: 100px; */
+}
+
+img {
+    height: 400px;
+    padding: 1%;
+    margin: auto;
+}
+
+.burgerpic {
+    height: 20px;
+    margin-right: 40px;
+}
+.pic {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name {
+    width: 300px;
+    height: 25px;
+}
+.email {
+    width: 300px;
+    height: 25px;
+}
+
+.message {
+    width: 800px;
+    height: 100px;
+  }
+
+button {
+    background: white;
+    font-family: 'Poiret One'; 
+    color: black;
+}
+
+header nav a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+#mobile-nav {
+    background: lavender;
+    color: black;
+    display: none;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
+#mobile-nav a {
+	display: block;
+    text-align: center;
+    color: black;
+}
+
+#burger {
+	float: right;
+	display: none;
+}
+
+@media (max-width: 875px) {
+	#burger {
+		display: block;
+	}
+	#nav {
+		display: none;
+    }
+    /* #mobile-nav {
+        display: flex;
+        height: 20px;
+    } */
+    .about {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
