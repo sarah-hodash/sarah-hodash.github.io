@@ -12,7 +12,8 @@ $(document).ready(function () {
 			$('#mobile-nav').hide();
 
 		}
-	})
+    })
+    
 
 $('#burger').click(function(){
     $('#mobile-nav').slideToggle();
